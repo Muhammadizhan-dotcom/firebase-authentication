@@ -3,30 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase Authentection</title>
+    <title>Firebase Authentication</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Link to Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Optional: Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <form id="loginForm">
+    <div id="loginForm">
       <h1>Login</h1>
-      <input
-        type="email"
-        id="email"
-        required
-        placeholder="Enter your email"
-      /><br />
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-      /><br />
+      <div class="input-container">
+        <i class="fa fa-envelope"></i>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+        />
+      </div>
 
-      <button class="btn">Login</button>
-      <h4 class="register-link">
-        Don't have an account? <a href="register.html">Register your self</a>
-      </h4>
-    </form>
-
+      <button class="btn" id="loginButton">Login</button>
+      <div class="register-link">
+        <h4>
+          Don't have an account? <a href="register.html">Register yourself</a>
+        </h4>
+      </div>
+    </div>
     <script type="module" src="app.js"></script>
   </body>
 </html>
