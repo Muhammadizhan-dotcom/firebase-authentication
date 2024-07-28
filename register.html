@@ -6,10 +6,6 @@
     <title>Register</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -17,17 +13,23 @@
   <body>
     <form id="loginForm">
       <h1>Register</h1>
-      <input
-        type="email"
-        id="email"
-        required
-        placeholder="Enter your email"
-      /><br />
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-      /><br />
+      <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        /><br />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-lock icon"></i>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        /><br />
+      </div>
 
       <button type="submit" class="btn">Login</button>
       <h4 class="register-link">
